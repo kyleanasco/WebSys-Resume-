@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kyle Anasco - Resume</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <ul class="nav-list">
+      <li><a href="#profile">Profile</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="resume-container">
+    <header class="hero section">
+      <img src="assets/profile.jpg" alt="Profile Picture of Kyle Chrisler C. Anasco" class="profile-pic">
+      <h1>Kyle Chrisler C. Anasco</h1>
+      <p class="job-role">Front-End Web Developer</p>
+    </header>
+
+    <section id="profile" class="section card">
+      <h2>Profile Summary</h2>
+      <p>
+        I am Kyle Chrisler C. Anasco, an IT student and aspiring front-end web developer with a strong
+        interest in creating responsive and user-friendly web interfaces. I am continuously learning
+        modern technologies such as HTML, CSS, JavaScript, and basic frameworks, while building
+        personal projects to improve my skills. I am eager to gain real-world experience, contribute
+        to innovative teams, and grow as a developer in a professional environment.
+      </p>
+    </section>
+
+    <section id="experience" class="section">
+        <h2>Work Experience</h2>
+        <div class="job">
+          <p class="job-title">Front-End Developer</p>
+          <p class="company">Personal Projects | 2024 - Present</p>
+          <p>
+            Developed and maintained responsive web interfaces using HTML, CSS, and JavaScript.
+            Applied best practices in layout design, usability, and mobile responsiveness while
+            creating interactive features. Strengthened problem-solving and coding skills through
+            continuous project-based learning.
+          </p>
+        </div>
+
+        <div class="job">
+          <p class="job-title">UI Design & Content Editing</p>
+          <p class="company">Academic Project | 2022 - 2024</p>
+          <p>
+            Collaborated with team members to design and enhance user interfaces for academic projects.
+            Utilized design tools to create visually appealing layouts and improve content presentation.
+            Demonstrated strong attention to detail and effective teamwork in delivering polished project outputs.
+          </p>
+        </div>
+      </section>
+
+    <section id="education" class="section card">
+      <h2>Education</h2>
+      <div class="education-item">
+        <p class="course">Graduate in Science Technology Engineering and Mathematics (STEM)</p>
+        <p class="school">Manolo Fortich National High School | 2022 - 2024</p>
+      </div>
+      <div class="education-item">
+        <p class="course">Bachelor of Science in Information Technology</p>
+        <p class="school">University of Science and Technology of Southern Philippines | 2024 - 2026</p>
+      </div>
+    </section>
+
+    <section id="skills" class="section card">
+      <h2>Skills</h2>
+      <input type="text" id="skillSearch" placeholder="Search skills..." class="search-box">
+
+      <div id="skills-list">
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">jQuery</span>
+        <span class="skill">Responsive Design</span>
+        <span class="skill">Bootstrap</span>
+        <span class="skill">Git</span>
+      </div>
+    </section>
+
+    <section id="projects" class="section card">
+      <h2>Projects / Portfolio</h2>
+      <button class="toggle-btn" id="toggleProjectsBtn">Show Projects</button>
+      <div id="projects-section"></div>
+    </section>
+
+    <section id="contact" class="section card">
+      <h2>Contact</h2>
+      <div class="contact">
+        <p>Email: <a href="mailto:kyleanasco1225@gmail.com">kyleanasco1225@gmail.com</a></p>
+        <p>Phone: 0936-806-3430</p>
+        <p>Location: Manolo Fortich, Philippines</p>
+        <p>Portfolio: <a href="#">yourportfolio.com</a></p>
+        <p>GitHub: <a href="#">github.com/yourusername</a></p>
+      </div>
+    </section>
+
+    <section id="contact-form-section" class="section card">
+      <h2>Send a Message</h2>
+      <form id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5"></textarea>
+
+        <button type="submit" class="send-btn">Send</button>
+        <p id="formMessage"></p>
+      </form>
+    </section>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

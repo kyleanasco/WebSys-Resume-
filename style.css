@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f3f4f6;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  background: #111827;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-list a:hover {
+  color: #93c5fd;
+}
+
+/* Main container */
+.resume-container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+/* Hero/Header */
+.hero {
+  text-align: center;
+  padding: 30px 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #2563eb;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.job-role {
+  font-size: 18px;
+  color: #2563eb;
+  font-weight: bold;
+}
+
+/* All sections same style */
+.section {
+  margin-bottom: 30px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e5e7eb;
+  color: #111827;
+}
+
+p,
+label {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+/* Work experience and education items */
+.job,
+.education-item {
+  background: #f9fafb;
+  padding: 15px;
+  border-left: 4px solid #2563eb;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.job-title,
+.course {
+  font-weight: bold;
+  color: #111827;
+  margin-bottom: 5px;
+}
+
+.company,
+.school {
+  color: #6b7280;
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
+/* Contact */
+.contact p {
+  margin-bottom: 10px;
+}
+
+.contact a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Skills */
+.search-box {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  outline: none;
+}
+
+.search-box:focus {
+  border-color: #2563eb;
+}
+
+.skill {
+  background: #374151;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 5px 5px 0 0;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.skill:hover {
+  background: #4b5563;
+}
+
+.skill.active {
+  background: #f59e0b;
+  color: white;
+}
+
+/* Buttons */
+.toggle-btn,
+.send-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 18px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.toggle-btn:hover,
+.send-btn:hover {
+  background: #1d4ed8;
+}
+
+/* Projects */
+#projects-section {
+  display: none;
+  margin-top: 20px;
+}
+
+.project-card {
+  background: #f9fafb;
+  border-left: 4px solid #2563eb;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.project-card h3 {
+  margin-bottom: 8px;
+  color: #111827;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  outline: none;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #2563eb;
+}
+
+#formMessage {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .resume-container {
+    padding: 15px;
+  }
+
+  .nav-list {
+    gap: 10px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .job-role {
+    font-size: 16px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+}
